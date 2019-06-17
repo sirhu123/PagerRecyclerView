@@ -1,6 +1,8 @@
 # PagerRecyclerView
 支持整页滑动的 RecyclerView
 
+![gif]("app/gif/page-recyclerview.gif")
+
 # 第一步：
 - 按照正常流程创建 RecyclerView 并设置 RecyclerView.Adapter;
 # 第二步：
