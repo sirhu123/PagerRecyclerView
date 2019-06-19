@@ -97,10 +97,12 @@ class PagerSnapHelper(private val itemCount: Int) : SnapHelper() {
         val page = when {
             mCurrentScrolledX > 0 -> mScrolledX / mRecyclerViewWidth + 1
             mCurrentScrolledX < 0 -> mScrolledX / mRecyclerViewWidth
+            mCurrentScrolledY > 0 -> mScrolledY / mRecyclerViewHeight + 1
+            mCurrentScrolledY < 0 -> mScrolledY / mRecyclerViewHeight
             else -> RecyclerView.NO_POSITION
         }
         resetCurrentScrolled()
-        return (if (page == RecyclerView.NO_POSITION) RecyclerView.NO_POSITION else page * itemCount)
+        return if (page == RecyclerView.NO_POSITION) RecyclerView.NO_POSITION else page * itemCount
     }
 
     private fun resetCurrentScrolled() {
