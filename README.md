@@ -4,7 +4,7 @@
 <img src="https://github.com/sirhu123/PagerRecyclerView/blob/master/app/gif/page-recyclerview.gif" width="200" alt="gif"/>
 
 # 第一步：
-- 按照正常流程创建 RecyclerView 并设置 RecyclerView.Adapter;
+- 按照正常流程创建 RecyclerView 并设置 RecyclerView.Adapter；
 # 第二步：
 - 根据 RecyclerView 的宽高控制每个 ItemView 的宽高；
 # 第三步：
